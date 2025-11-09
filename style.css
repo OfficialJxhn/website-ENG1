@@ -40,7 +40,7 @@ h2.subtitle {
 }
 
 /* Link styling */
-a {
+.clickable-tabs {
   display: block; /* Makes the whole area clickable */
   background-color: #f4e9d7; /* Use light color for link background */
   color: #d97d55; /* Use main background color for link text */
@@ -55,5 +55,22 @@ a {
 a:hover {
   background-color: #ffffff; /* Brighten on hover */
   transform: translateY(-2px); /* Slight "lift" effect */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Styles for UML Diagrams */
+.uml-image-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+img.uml-diagram {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  background-color: #f4e9d7;
+  padding: 10px;
+  box-sizing: border-box; /* Ensures padding doesn't break layout */
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
